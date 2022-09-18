@@ -10,7 +10,7 @@ def getmessage():
 
 # Exercise 3
 def getcypherkey():
-    shiftamount = input("Please enter a key (whole number fro, 1-25: ")
+    shiftamount = input("Please enter a key (whole number from, 1-25: ")
     return shiftamount
 
 # Exercise 4
