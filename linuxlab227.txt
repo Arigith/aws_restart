@@ -1,0 +1,21 @@
+Task 1: Connect to linux
+- ssh -i file.pem user@ipaddress
+- yes if prompted
+
+Task 2: Run familiar commands
+whoami = user
+hostname -s = ipaddress from login
+uptime -p = time online in linux session
+who -H -a = shows all users logged in
+TZ=America/New_York date = date and time in New New York
+TZ=America/Los_Angeles date = date and time in Los Angeles
+cal -j = julian date (day of year ie feb 1 is day 32 and Sept 19 is 262)
+cal -s = month with week starting Sunday
+cal -m = month with week starting Monday
+id ec2-user = unique id and group info of requested user
+
+Task 3: Improve workflow through history and search
+history = show commands you have used
+crtl+r = history search
+date = show local date and time
+!! = use last command

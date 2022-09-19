@@ -1,0 +1,19 @@
+Task 1: Log into linux
+- ssh -i file.pem user@ipaddress
+
+Task 2: Create users
+sudo useradd <username> = add user with username
+sudo passwd <username> (will need to enter password twice) = 
+    - when entering a PW, linux will not show anything
+sudo cat /etc/passwd | cut -d: -f1 = This will tell you if you have done it right as user should show with this command
+
+Task 3: Create groups
+sudo groupadd <groupname> = create group with <groupname>
+cat /etc/groupadd = find <groupname>:x:NUMBER
+sudo usermod -a -G <groupname> <username>
+cat /etc/groupadd = new check should show <groupname>:x:Number:<username>
+su <username>, then enter password
+touch myfile.txt = Permission denied
+sudo touch myfile.txt, then enter password = error stating <username> is not a sudoer and this will be reported
+exit
+sudo cat /var/log/secure = report can be seen

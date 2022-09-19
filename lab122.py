@@ -5,7 +5,7 @@
 # Python3.6  
 # Coding: utf-8  
 # Store the human preproinsulin sequence in a variable called preproinsulin:  
-preproInsulin = "malwmrllpllallalwgpdpaaafvnqhlcgshlvealylvcgergffytpktrreaedlqvgqvelgggpgagslqplalegslqkrgiveqcctsicslyqlenycn"  
+preproInsulin = "malwmrllpllallalwgpdpaaafvnqhlcgshlvealylvcgergffytpktrreaedlqvgqvelgggpgagslqplalegslqkrgiveqcctsicslyqlenycn
 # Store the remaining sequence elements of human insulin in variables:  
 lsInsulin = "malwmrllpllallalwgpdpaaa"  
 bInsulin = "fvnqhlcgshlvealylvcgergffytpkt"  

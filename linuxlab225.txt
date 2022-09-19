@@ -1,0 +1,13 @@
+Task 1: connect to SSH.
+Log into linux Lab
+- Select start Lab
+- once connected select details
+- download file.pem
+- copy ip address
+- open cmd
+- cd downloads (or location where file.pem was downloaded to)
+- command: ssh -i file.pem user@ipaddress
+- say yes if prompted
+
+Task 2: Explore Linux
+use command: man man
