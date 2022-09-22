@@ -1,0 +1,30 @@
+Task 1: log into linux
+ssh -i file.pem user@ip
+yes if promted
+
+Task 2: created a backup
+Create following
+ /companya/employees/schedules.csv
+ /companya/finance/salary.csv
+ /companya/hr/assessments.csv
+ /companya/hr/managers.csv
+ /companya/ia/
+ /companya/management/promotions.csv
+ /companya/management/sections.csv
+ /companya/sharedfolders
+validate: ls -R companya
+create backup: tar -csvpzf backup.companya.tar.gz companya
+validate: ls (looking for backup.companya.tar.gz)
+
+Task 3: Log the backup
+move to companya folder: cd companya
+create file backups in sharedfolders: touch sharedfolders/backups.csv
+validate: ls sharedfolders
+add a date and time to backup: echo "23 Sept 2022. 09:21, backup.companya.tar gz" | sudo tee sharedfolders/backups
+ command - | sudo tess - writes info both in file and terminal
+validate: cat sharedfolders/backups
+
+Task 4: move the backup file
+make sure you are in the companya folder: pwd
+transfer: mv ../backup.companya.tar.gz ia/
+validate: ls . ia

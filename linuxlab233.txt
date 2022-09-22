@@ -1,0 +1,34 @@
+Task 1: Log into Linux
+ssh -i file.pem user@ip
+Yes if prompted
+
+Task2: Create a folder structure
+create following
+ /companya/finance/profitandlossstatement.csv
+ /companya/finance/salary.csv
+ /companya/hr/assessments.csv
+ /companya/hr/trialperiod.csv
+ /companya/management/managers.csv
+ /companya/management/schedule.csv
+validate: ls -lar
+
+Task 3: Delete and reorganise folders
+copy finance folder to hr: cp -r finance hr
+validate: ls hr/finance
+Remove finance directory: rm -r finance
+##
+Way LABS want you to do Task 3 (they de reference the rm -r function)
+copy finance folder to hr: cp -r finance hr
+validate: ls hr/finance
+remove files from finance:
+ rm finance/profitandlossstatement.csv
+ rm finance/salary.csv
+validate: ls finance
+remove directory finance: rmdir finance
+##
+move management folder into hr: cp -r management hr
+validate: ls hr/management
+move to hr folder: cd hr
+create a employees folder: mkdir employees
+move assessments and trialperiod files to new folder: mv assessments.csv trialperiod.csv employees
+validate: ls . employees (this is like 2 commands in 1 - ls and then ls employees)
