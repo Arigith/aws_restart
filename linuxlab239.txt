@@ -1,0 +1,24 @@
+Task 1: Log into linux
+ssh -i file.pem user@ipaddress
+yes if prompted
+
+Task 2: Exercise - Create List of Processes
+cd companyA
+pwd
+sudo ps -aux | grep -v root | sudo tee SharedFolders/processes.csv
+cat SharedFolders/processes.csv
+
+Task 3: Exercise - List the processes using the top command 
+top 
+q
+top -hv
+
+Task 4: Exercise - Create a Cron Job
+sudo crontab -e
+i
+SHELL=/bin/bash
+PATH=/usr/bin:/bin:/usr/local/bin
+MAILTO=root
+0 * * * * ls -la $(find .) | sed -e 's/..csv/#####.csv/g' > /home/ec2-user/companyA/SharedFolders/filteredAudit.csv
+:wq
+sudo crontab -l

@@ -1,0 +1,23 @@
+Task 1: log into linux
+ssh -i file.pem user@ipaddress
+yes if prompted
+
+Task 2: Check the Status of the httpd Service
+sudo systemctl status httpd.service - check to see if service is running (under active it will state active)
+sudo systemctl start httpd.service - Start service if not running
+sudo systemctl status httpd.service - Validate if service started
+In a internet browser 'http://ipaddress' (the ip you used to get into linux)
+sudo systemctl stop httpd.service - stop service
+sudo systemctl status httpd.service - validate service stopped
+
+Task 3: Monitoring a Linux EC2 instance
+top - list running processes
+q - quit
+./stress.sh & top
+open aws
+search for cloudwatch
+Dashboards -> Automatic Dashboards -> EC2
+wait 6 min
+Check usage again
+close aws
+q - quit

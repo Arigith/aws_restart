@@ -1,0 +1,33 @@
+Task 1: Connect to linux
+ssh -i file.pem user@ipaddress
+yes if prompted
+
+Task 2: Using the tee command
+hostname | tee file1.txt
+confirm file was created with ls
+
+Task 3: Use sort command and pipe operator
+cat > test.csv
+    Factory, 1, Paris
+    Store, 2, Dubai
+    Factory, 3, Brasilia
+    Store, 4, Algiers
+    Factory, 5, Tokyo
+ctr+d - exit edit mode
+ls - confirm file was created
+sort test.csv
+find | grep Paris test.csv
+
+Task 4: Use the cut command
+cat > cities.csv
+    Dallas, Texas
+    Seattle, Washington
+    Los Angeles, California
+    Atlante, Georgia
+    New York, New York
+ctr+D - exit edit mode
+ls - validate the file was created
+cut -d ',' -f 1 cities.csv - should result in showing everything before , on each line
+
+Additional Challenge: Use sed command to change all , to .
+sed 's/,/./g' cities.csv

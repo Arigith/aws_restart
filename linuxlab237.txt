@@ -1,0 +1,25 @@
+Task 1: Log into linux
+ssh -i file.pem user@ipaddress
+yes if promplted
+
+Task 2: Change file and folder ownership
+move to companyA folder
+sudo chown -R mjackson:Personnel /home/ec2-user/companyA
+sudo chown -R ljuan:HR HR
+sudo chown -R mmajor:Finance HR/Finance
+ls -laR
+
+Task 3: Change permissions
+sudo vi symbolic_mode_file
+:qw
+sudo chmod g+w symbolic_mode_file
+sudo vi absolute_mode_file
+:wq
+sudo chmod 764 absolute_mode_file (746 means user has read, write and execute Permission)
+ls -l
+
+Task 4: Assign permissions
+sudo chown -R eowusu:Shipping Shipping
+sudo chown -R nwolf:Sales Sales
+ls -laR Shipping
+ls -laR Sales
