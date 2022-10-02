@@ -1,0 +1,27 @@
+Task 1: log into linux
+ssh -i file.pem user@ipaddress
+yes if prompted
+
+Task 2: Create an alias for a backup operation
+pwd  - Validate your in correct folder
+alias backup='tar -cvzf '
+ -v displays what is being put into archive
+ -z compresses file into .gzip format
+ -f achives the files
+backup backup.companyA.tar.gz CompanyA
+
+without the alias this is writen
+    tar - cvzf backup.companyA.tar.gz CompanyA
+
+ls - Verify file was created
+
+Task 3: Explore and update the PATH environment variable
+cd CompanyA/bin/
+pwd - Confirm your in right folder
+./hello.sh - Should say hello ec2-user
+cd ..
+./bin/hello.sh - Should say hello ec2-user
+hello.sh - Should error
+echo $PATH
+PATH=$PATH:/home/ec2-user/CompanyA/bin
+hello.sh - Should say hello ec2-user

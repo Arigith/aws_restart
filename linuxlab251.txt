@@ -1,0 +1,19 @@
+Task 1: Connect to linux
+ssh -i file.pem user@ipaddress
+yes if prompted
+
+Task 2: Write a shell script
+pwd - confirm your in the right folder
+ls - make sure folder your inputing to is created
+mkdir backups - create folder if required
+touch backup.sh
+sudo chmod 755 backup.sh
+vi backup.sh 
+i
+#!/bin/bash
+DAY="$(date +%Y_%m_%d_%T_%H_%M)"
+BACKUP="/home/$USER/backups/$DAY-backup-CompanyA.tar.gz"
+tar -csvpzf $BACKUP /home/$USER/CompanyA
+:wq - save and quit
+./backup.sh
+ls backups/

@@ -1,0 +1,26 @@
+117 - done
+119 - done - study up on IDE benifits (ide highlight incorrect syntax and suggest fixes)
+121 - done
+123 - done
+125 - done
+127 - 
+223 - 
+131 - 
+137 - 
+138 - 
+
+linux
+226 - done
+228 - done
+230 - done
+232 - done
+234 - done
+236 - failed
+238 - done - ls -l
+248 - done - sed and output redirectors
+240 - failed - kill command
+242 - done - review commands free, df -h, vmstat and systemctl list-units --type=service --state=active
+250 - done
+252 - failed
+244 - 
+246 - 
