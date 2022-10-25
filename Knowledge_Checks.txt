@@ -1,3 +1,4 @@
+Python
 117 - done
 119 - done - study up on IDE benifits (ide highlight incorrect syntax and suggest fixes)
 121 - done
@@ -26,19 +27,23 @@ linux
 246 - done
 
 Networking
-254 -
-255 -
-256 -
-257 -
-258 -
-259 -
-260 -
+254 - done
+255 - done: hybrid topology - star-bus is commonly used
+            connection-oriented protocol creates a session between sender and receiver
+            connectionless protocol sends a message to the destination without ensuring that the destination is available.
+256 - done: CIDR Classless Inter-Domain Routing
+            IP address class A is ment for extremely large networks
+257 - 
+258 - 
+259 - 
+260 - 
 
 Security
-282 -
-283 -
-284 -
-285 -
+282 - done: Which option is a phase in the security lifecycle? Prevention
+            Which option is an example of an administrative security control? Acceptable Use Policy document
+283 - done: at least 1 
+284 - done
+285 - done
 286 -
 287 -
 288 -
@@ -54,17 +59,19 @@ Security
 298 -
 
 Databases
-299 -
-300 -
-301 -
-302 -
-303 -
-304 -
-305 -
-306 -
-307 -
-308 -
-309 -
+299 - done
+300 - done
+301 - done
+302 - done: CONCAT adds two or more strings together
+303 - done: Add comments within SQL statements with --
+            * selects all columns not rows
+304 - done: BETWEEN
+305 - done
+306 - done: Aggregate Functions with the GROUP BY clause
+            Organizing Data – HAVING modifier
+307 - done
+308 - 
+309 - 
 
 Jumpstart on AWS
 167 -
